@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\BattleScript.cs" />
+    <Compile Include="Assets\ElementDragScript.cs" />
     <Compile Include="Assets\HealthScript.cs" />
     <Compile Include="Assets\Timerscript.cs" />
   </ItemGroup>

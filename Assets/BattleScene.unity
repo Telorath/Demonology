@@ -95,6 +95,7 @@ GameObject:
   - 4: {fileID: 28520391}
   - 212: {fileID: 28520390}
   - 58: {fileID: 28520389}
+  - 114: {fileID: 28520392}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -158,6 +159,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &28520392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28520388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca7e340030db9147b6bbb506c6e4f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &29123464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,7 +1176,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -1532,6 +1544,7 @@ GameObject:
   - 4: {fileID: 1150379239}
   - 212: {fileID: 1150379238}
   - 58: {fileID: 1150379237}
+  - 114: {fileID: 1150379240}
   m_Layer: 0
   m_Name: Air
   m_TagString: Untagged
@@ -1595,6 +1608,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &1150379240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1150379236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca7e340030db9147b6bbb506c6e4f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1185215073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1605,6 +1629,7 @@ GameObject:
   - 4: {fileID: 1185215076}
   - 212: {fileID: 1185215075}
   - 58: {fileID: 1185215074}
+  - 114: {fileID: 1185215077}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -1668,6 +1693,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!114 &1185215077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1185215073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca7e340030db9147b6bbb506c6e4f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1366669948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,7 +1751,7 @@ GameObject:
   - 81: {fileID: 1435513019}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1865,6 +1901,7 @@ GameObject:
   - 4: {fileID: 1505989785}
   - 212: {fileID: 1505989784}
   - 58: {fileID: 1505989783}
+  - 114: {fileID: 1505989786}
   m_Layer: 0
   m_Name: Shadow
   m_TagString: Untagged
@@ -1928,6 +1965,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!114 &1505989786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1505989782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca7e340030db9147b6bbb506c6e4f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1518651560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1938,6 +1986,7 @@ GameObject:
   - 4: {fileID: 1518651563}
   - 212: {fileID: 1518651562}
   - 58: {fileID: 1518651561}
+  - 114: {fileID: 1518651564}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -2001,6 +2050,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &1518651564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1518651560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca7e340030db9147b6bbb506c6e4f02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1645285409
 GameObject:
   m_ObjectHideFlags: 0
