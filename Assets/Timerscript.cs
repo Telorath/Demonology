@@ -1,40 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Timers;
 
-public class Timerscript : MonoBehaviour {
+public class Timerscript : MonoBehaviour
+{
     public GameObject BattleObj;
     public int TimerDuration;
-    public float baseyshift;
-    public float incyshift;
-    int ticks;
-    Vector3 basescale;
-    Vector3 basepos;
-	// Use this for initialization
-	void Start () {
-        basescale = transform.localScale;
-        basepos = transform.localPosition;
-        transform.localScale = new Vector3(basescale.x,0,basescale.z);
-        transform.localPosition = new Vector3(basepos.x, basepos.y - baseyshift, basepos.z);
-	}
-	void FixedUpdate()
+    float TimeRemaining;
+    void Start()
+    {
+        GetComponent<CanvasRenderer>().SetColor(new Color(0.8f, 0, 0.8f));
+        TimeRemaining = TimerDuration;
+    }
+    // Update is called once per frame
+    void Update()
     {
         if (TimerDuration <= 0)
         {
             return;
         }
-        ticks++;
-        transform.localScale += new Vector3(0, (basescale.y / TimerDuration), 0);
-        transform.localPosition += new Vector3(0, incyshift, 0);
-        if (ticks > TimerDuration)
+        TimeRemaining -= Time.deltaTime;
+        if (TimeRemaining <= 0)
         {
-            transform.localScale = new Vector3(basescale.x, 0, basescale.z);
-            transform.localPosition = new Vector3(basepos.x, basepos.y - baseyshift, basepos.z);
             BattleObj.GetComponent<BattleScript>().Turn();
-            ticks = 0;
+            TimeRemaining = TimerDuration;
         }
-    }
-	// Update is called once per frame
-	void Update () {
-
+        transform.localScale = new Vector3(((float)TimeRemaining / (float)TimerDuration), 1, 1);
     }
 }
