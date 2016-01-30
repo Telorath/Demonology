@@ -95,6 +95,7 @@ GameObject:
   - 4: {fileID: 28520391}
   - 212: {fileID: 28520390}
   - 58: {fileID: 28520389}
+  - 50: {fileID: 28520393}
   - 114: {fileID: 28520392}
   m_Layer: 0
   m_Name: Earth
@@ -112,7 +113,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -170,6 +171,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bca7e340030db9147b6bbb506c6e4f02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &28520393
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28520388}
+  m_UseAutoMass: 1
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &29123464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,6 +1136,8 @@ GameObject:
   - 4: {fileID: 668043904}
   - 212: {fileID: 668043903}
   - 58: {fileID: 668043905}
+  - 50: {fileID: 668043908}
+  - 114: {fileID: 668043906}
   m_Layer: 0
   m_Name: Penta
   m_TagString: Untagged
@@ -1162,7 +1182,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 668043902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0054151574, z: 0}
+  m_LocalPosition: {x: 0, y: 0.0054151574, z: -1.62}
   m_LocalScale: {x: 0.30864197, y: 0.5157298, z: 1}
   m_Children: []
   m_Father: {fileID: 438250978}
@@ -1181,6 +1201,34 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
+--- !u!114 &668043906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 668043902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 696c0fd6f482c1b4d8c4c6f6ed0e1d06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &668043908
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 668043902}
+  m_UseAutoMass: 1
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 3
 --- !u!1 &943348367
 GameObject:
   m_ObjectHideFlags: 0
@@ -1960,7 +2008,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1505989782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.25, y: -4.11, z: -1.88}
+  m_LocalPosition: {x: 4.25, y: -4.11, z: -1.62}
   m_LocalScale: {x: 4.554688, y: 4.898437, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
