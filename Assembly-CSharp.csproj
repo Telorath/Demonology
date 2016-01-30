@@ -49,6 +49,7 @@
      <Compile Include="Assets\ElementDragScript.cs" />
      <Compile Include="Assets\HealthScript.cs" />
      <Compile Include="Assets\PentAddE.cs" />
+     <Compile Include="Assets\SliderScript.cs" />
      <Compile Include="Assets\Timerscript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
