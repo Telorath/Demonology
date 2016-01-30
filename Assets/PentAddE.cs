@@ -6,7 +6,7 @@ public class PentAddE : MonoBehaviour
 
 	string Catalysts;		//Used to add elements using only One char
 	int MaxStored = 3;		//Most elements that can be added
-
+	
 	//int NumIn;
 	
 	void ResetCatalysts()
@@ -55,6 +55,30 @@ public class PentAddE : MonoBehaviour
 
 	void Cast()
 	{
+		// Icicle
+		if(Catalysts == "AW" || Catalysts == "WA")
+		{
 
+		}
+		// Lightning Strike
+		if (Catalysts == "EA" || Catalysts == "AE")
+		{
+
+		}
+		// Ground spike
+		if (Catalysts == "ES" || Catalysts == "SE")
+		{
+
+		}
+		// Fireball
+		if (Catalysts == "FS" || Catalysts == "SF")
+		{
+
+		}
+		// Magic Missile
+		if (Catalysts == "SFA" )
+		{
+
+		}
 	}
 }

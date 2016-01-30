@@ -4,12 +4,12 @@ using System.Collections;
 public class ElementDragScript : MonoBehaviour {
     private Vector3 screenPoint;
     private Vector3 offset;
-	//private Vector3 original;  //could be used to store where it starts from
+	private Vector3 original;  //could be used to store where it starts from
     void OnMouseDown()
     {
         screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
         offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
-		//original = offset;
+		original = offset;
     }
     void OnMouseDrag()
     {
@@ -20,6 +20,6 @@ public class ElementDragScript : MonoBehaviour {
 
 	void Reset()
 	{
-		//offset = original;
+		offset = original;
 	}
 }
