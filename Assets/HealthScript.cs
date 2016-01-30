@@ -23,8 +23,9 @@ public class HealthScript : MonoBehaviour {
             if (health <= 0)
             {
                 alive = false;
+                health = 0;
             }
-//            HealthBar.GetComponent<Slider> = health / maxhealth;
+            HealthBar.GetComponentInChildren<HealthBarScript>().Value = ((float)health / maxhealth);
         }
     }
     public int MaxHealth

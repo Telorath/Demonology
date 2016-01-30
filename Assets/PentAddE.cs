@@ -54,8 +54,10 @@ public class PentAddE : MonoBehaviour
 			Catalysts += 'S';			//Just add the 1st Letter of S
 	}
 
-	string Cast()
+	public string Cast()
 	{
+        if (Catalysts == null)
+            return "Melee";
 		// Icicle
 		if(Catalysts == "AW" || Catalysts == "WA")
 		{

@@ -5,7 +5,7 @@ using System.Timers;
 public class Timerscript : MonoBehaviour
 {
     public GameObject BattleObj;
-    public int TimerDuration;
+    public float TimerDuration;
     float TimeRemaining;
     void Start()
     {
@@ -15,16 +15,20 @@ public class Timerscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (TimerDuration <= 0)
+        if (TimeRemaining <= 0 || TimerDuration <= 0)
         {
             return;
         }
         TimeRemaining -= Time.deltaTime;
         if (TimeRemaining <= 0)
         {
+            TimeRemaining = 0;
             BattleObj.GetComponent<BattleScript>().Turn();
-            TimeRemaining = TimerDuration;
         }
         transform.localScale = new Vector3(((float)TimeRemaining / (float)TimerDuration), 1, 1);
+    }
+    public void ResetTimer()
+    {
+        TimeRemaining = TimerDuration;
     }
 }

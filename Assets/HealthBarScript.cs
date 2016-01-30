@@ -16,12 +16,12 @@ public class HealthBarScript : MonoBehaviour {
             transform.localScale = new Vector3(value, transform.localScale.y, transform.localScale.z);
             if (value > 0.50)
             {
-                Color C = new Color(1 - (value - 0.50f) * 2, 1, 0);
+                Color C = new Color(1 - (this.value - 0.50f) * 2, 1, 0);
                 GetComponent<CanvasRenderer>().SetColor(C);
             }
             else
             {
-                Color C = new Color(1, 0 + (value) * 2, 0);
+                Color C = new Color(1, 0 + (this.value) * 2, 0);
                 GetComponent<CanvasRenderer>().SetColor(C);
             }
         }
