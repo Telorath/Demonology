@@ -3,9 +3,8 @@ using System.Collections;
 using System.Timers;
 
 public class BattleScript : MonoBehaviour {
-    public GameObject PlayerHealth;
-    public GameObject EnemyHealth;
-    public float xshift;
+    public GameObject Player;
+    public GameObject Enemy;
 	// Use this for initialization
 	void Start () {
 	
@@ -17,11 +16,6 @@ public class BattleScript : MonoBehaviour {
 	}
     public void Turn()
     {
-        //        pBlue -= 0.03f;
-        //        pGreen -= 0.03f;
-        //        PlayerHealth.transform.localScale -= new Vector3(1, 0, 0);
-        //        PlayerHealth.transform.localPosition -= new Vector3(xshift,0,0);
-        //        PlayerHealth.GetComponent<SpriteRenderer>().color = new Color(pRed,pGreen,pBlue);
-        PlayerHealth.GetComponentInChildren<HealthBarScript>().Value -= 0.2f;
+
     }
 }
