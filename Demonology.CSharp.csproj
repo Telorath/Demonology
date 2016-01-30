@@ -71,6 +71,7 @@
     <Compile Include="Assets\BattleScript.cs" />
     <Compile Include="Assets\ElementDragScript.cs" />
     <Compile Include="Assets\HealthScript.cs" />
+    <Compile Include="Assets\SliderScript.cs" />
     <Compile Include="Assets\Timerscript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
