@@ -6,7 +6,7 @@ public class PentAddE : MonoBehaviour
 
 	string Catalysts;		//Used to add elements using only One char
 	int MaxStored = 3;		//Most elements that can be added
-//kfiygl;iglfku
+
 	//int NumIn;
 	
 	void ResetCatalysts()
