@@ -5,6 +5,7 @@ public class HealthScript : MonoBehaviour {
 
     public int health;
     public int maxhealth;
+    public GameObject HealthBar;
     bool alive = true;
     public int Health
     {
@@ -23,6 +24,7 @@ public class HealthScript : MonoBehaviour {
             {
                 alive = false;
             }
+//            HealthBar.GetComponent<Slider> = health / maxhealth;
         }
     }
     public int MaxHealth
@@ -35,5 +37,9 @@ public class HealthScript : MonoBehaviour {
         {
             maxhealth = value;
         }
+    }
+    public bool Alive
+    {
+        get { return alive; }
     }
 }
