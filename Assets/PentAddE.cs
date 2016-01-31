@@ -9,7 +9,7 @@ public class PentAddE : MonoBehaviour
 	
 	//int NumIn;
 	
-	void ResetCatalysts()
+	public void ResetCatalysts()
 	{
 		Catalysts.Remove(0);		//Loss what is already in
 									//Just as we wanted it
