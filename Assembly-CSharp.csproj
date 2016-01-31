@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D727E44B-9A5B-5205-9C04-8A073CB3D301}</ProjectGuid>
+    <ProjectGuid>{2C400644-C1A8-2A76-E4D6-6B3E27053BEB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,9 +47,9 @@
   <ItemGroup>
      <Compile Include="Assets\BattleScript.cs" />
      <Compile Include="Assets\ElementDragScript.cs" />
+     <Compile Include="Assets\HealthBarScript.cs" />
      <Compile Include="Assets\HealthScript.cs" />
      <Compile Include="Assets\PentAddE.cs" />
-     <Compile Include="Assets\SliderScript.cs" />
      <Compile Include="Assets\Timerscript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
