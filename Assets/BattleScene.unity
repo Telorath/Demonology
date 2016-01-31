@@ -812,8 +812,10 @@ GameObject:
   - 4: {fileID: 994500130}
   - 212: {fileID: 994500129}
   - 114: {fileID: 994500128}
+  - 114: {fileID: 994500131}
+  - 114: {fileID: 994500132}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Imp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -870,11 +872,36 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 994500127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.42, y: -0.65, z: 0}
+  m_LocalPosition: {x: 8.9, y: -0.65, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
+--- !u!114 &994500131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 994500127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84de48e334b0c924e9ea52ffd7b7da8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
+--- !u!114 &994500132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 994500127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3480b5ceb3c27e3408045a334411e80a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -0.1
+  finalx: 2.5
 --- !u!1 &1142092276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,6 +1787,7 @@ GameObject:
   - 4: {fileID: 2103916331}
   - 212: {fileID: 2103916330}
   - 114: {fileID: 2103916329}
+  - 114: {fileID: 2103916332}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1778,8 +1806,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df18f73e9e9580240a752adcd27efb58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
-  maxhealth: 200
+  health: 3000
+  maxhealth: 3000
   HealthBar: {fileID: 236366540}
 --- !u!212 &2103916330
 SpriteRenderer:
@@ -1823,6 +1851,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
+--- !u!114 &2103916332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103916328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84de48e334b0c924e9ea52ffd7b7da8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &2110331900
 GameObject:
   m_ObjectHideFlags: 0

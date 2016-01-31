@@ -73,6 +73,8 @@
     <Compile Include="Assets\HealthBarScript.cs" />
     <Compile Include="Assets\HealthScript.cs" />
     <Compile Include="Assets\PentAddE.cs" />
+    <Compile Include="Assets\SlideIn.cs" />
+    <Compile Include="Assets\SlideX.cs" />
     <Compile Include="Assets\StartButtonActivate.cs" />
     <Compile Include="Assets\Timerscript.cs" />
   </ItemGroup>
