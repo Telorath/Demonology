@@ -1566,9 +1566,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 2103916328}
-  Enemy: {fileID: 441430316}
+  Enemy: {fileID: 1990347535}
   Pentagram: {fileID: 668043902}
   Timer: {fileID: 1359489390}
+  Fireball: {fileID: 736026332}
+  Icicle: {fileID: 1069082186}
+  GroundSpike: {fileID: 1158780160}
+  LightningStrike: {fileID: 1350487910}
+  MagicMissile: {fileID: 1293626668}
 --- !u!212 &943348369
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2337,7 +2342,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1293626669
 Transform:
   m_ObjectHideFlags: 0
@@ -2396,7 +2401,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1350487911
 Transform:
   m_ObjectHideFlags: 0

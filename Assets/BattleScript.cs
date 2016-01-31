@@ -8,6 +8,11 @@ public class BattleScript : MonoBehaviour
     public GameObject Enemy;
     public GameObject Pentagram;
     public GameObject Timer;
+    public GameObject Fireball;
+    public GameObject Icicle;
+    public GameObject GroundSpike;
+    public GameObject LightningStrike;
+    public GameObject MagicMissile;
     // Use this for initialization
     void Start()
     {
@@ -21,20 +26,19 @@ public class BattleScript : MonoBehaviour
     }
     public void Turn()
     {
-        PlayerAttack();
+        StartCoroutine(PlayerAttack());
         if (Enemy.GetComponent<HealthScript>().Alive)
             EnemyAttack();
-        Timer.GetComponent<Timerscript>().ResetTimer();
     }
-    public void PlayerAttack()
+    public IEnumerator PlayerAttack()
     {
         string s = Pentagram.GetComponent<PentAddE>().Cast();
-        s = "Melee";
+        s = "Spike";
         if (string.Compare(s, "Heal",true) == 0)
         {
             //Fuck the attack, heal instead.
             //Put a heal function in here.
-            return;
+            yield break;
         }
         int damage;
         if (string.Compare(s, "Melee", true) == 0)
@@ -54,6 +58,12 @@ else
         }
         if (string.Compare(s, "Lightning", true) == 0)
         {
+            LightningStrike.SetActive(true);
+            for (int i = 0; i < 45; i++)
+            {
+                yield return null;
+            }
+            LightningStrike.SetActive(false);
             if (Enemy.name.Contains("Succubus"))
             {
                 damage *= 4;
@@ -61,6 +71,12 @@ else
         }
         if (string.Compare(s, "Spike", true) == 0)
         {
+            GroundSpike.SetActive(true);
+            for (int i = 0; i < 60; i++)
+            {
+                yield return null;
+            }
+            GroundSpike.SetActive(false);
             if (Enemy.name.Contains("Gargoyle"))
             {
                 damage *= 6;
@@ -68,6 +84,12 @@ else
         }
         if (string.Compare(s, "Fireball", true) == 0)
         {
+            Fireball.SetActive(true);
+            for (int i = 0; i < 60; i++)
+            {
+                yield return null;
+            }
+            Fireball.SetActive(false);
             if (Enemy.name.Contains("Skeleton"))
             {
                 damage *= 9;
@@ -91,6 +113,7 @@ else
             damage = (int)(damage * 1.4);
         }
         DealDamagetoEnemy(damage);
+        Timer.GetComponent<Timerscript>().ResetTimer();
     }
     int CritCheck()
     {
@@ -108,6 +131,7 @@ else
             return 1;
         }
     }
+    
     public void EnemyAttack()
     {
         Player.GetComponent<HealthScript>().Health -= Enemy.GetComponent<DamageScript>().damage;
