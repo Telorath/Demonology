@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="Assets\BattleScript.cs" />
     <Compile Include="Assets\CatalystElement.cs" />
+    <Compile Include="Assets\DamageScript.cs" />
     <Compile Include="Assets\ElementDragScript.cs" />
     <Compile Include="Assets\HealthBarScript.cs" />
     <Compile Include="Assets\HealthScript.cs" />
